@@ -32,7 +32,7 @@ $ sudo apt update
 $ sudo apt install gcc
 
 ```
-para executar o programa siga os comandos entre na pasta do projeto e rode o comando abaixo no seu terminal 👇🏽
+para executar o programa siga os comandos entre na pasta fila-duplamente-encadeada do projeto e rode o comando abaixo no seu terminal 👇🏽
 
 ```bash
 
