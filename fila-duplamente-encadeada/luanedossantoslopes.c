@@ -3,6 +3,9 @@
 #include <time.h>
 #include "fila.h"
 
+/**
+ * Função responsável por ordenar crescentemente os dados da FILA;
+ */
 void ordenar_fila(Fila* fila){
     if (fila_vazia(fila)){
        printf("Fila Vazia!\n");
@@ -47,8 +50,6 @@ void ordenar_fila(Fila* fila){
     }
     // fila->ult = atual;
 }
-
-
 
 int main(){
     Fila* fila = criar_fila();

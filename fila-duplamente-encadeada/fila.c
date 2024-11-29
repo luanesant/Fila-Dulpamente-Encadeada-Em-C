@@ -1,7 +1,9 @@
 #include "fila.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * Função responsável por alocar e criar um ponteiro de FILA;
+ */
 Fila* criar_fila(){
     Fila* fila = malloc(sizeof(Fila));
     if(fila == NULL){
@@ -15,6 +17,9 @@ Fila* criar_fila(){
     return fila;
 }
 
+/**
+ * Função responsável por inserir um novo elemento no final da fila;
+ */
 void inserir_final_da_fila(Fila* fila, int idade){
     No* novo = malloc(sizeof(No));
     if(novo == NULL){
@@ -36,6 +41,9 @@ void inserir_final_da_fila(Fila* fila, int idade){
     
 }
 
+/**
+ * Função responsável por imprimir os elementos da FILA;
+ */
 void imprimir_fila(Fila* fila){
 
     No* no = fila->prim;
@@ -43,12 +51,19 @@ void imprimir_fila(Fila* fila){
         printf("%d", no->idade);
     }
     printf("\n");
+
 }
 
+/**
+ * Função responsável por verificar se a FILA está vazia;
+ */
 int fila_vazia(Fila* fila){
     return (fila->prim == NULL);
 }
 
+/**
+ * Função responsável por verificar quantos elementos estão contidos na FILA;
+ */
 int elementos_fila(Fila* fila){
     int qtd = 0;
     No* no = fila->prim;
@@ -59,6 +74,9 @@ int elementos_fila(Fila* fila){
     return qtd;
 }
 
+/**
+ * Função responsável por desalocar memória da FILA;
+ */
 void liberar_fila(Fila* fila ){
     No* no = fila->prim;
     while (no != NULL){
@@ -70,6 +88,9 @@ void liberar_fila(Fila* fila ){
     free(no);    
 }
 
+/**
+ * Função responsável por remover um a uma os elementos da FILA;
+ */
 int retirar_primeiro_no_da_fila(Fila* fila) {
     if (fila == NULL || fila->prim == NULL) {
         return -1; 
