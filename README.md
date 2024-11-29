@@ -11,6 +11,10 @@ Não esqueça de dar uma estrelinha ⭐⭐ 🤩
 ### Objetivo!
 O que você verá por aqui?? Então, o objetivo era fazer a ordenação de uma "fila virtual" com base nas idades (maior para o menor) do tipo bubble sort, bem legal né?
 
+## Mídias do Projeto!
+### Processo criativo
+![Fácil](assets/exemplo-de-fila-com-lista-duplamente-encadeada.png)
+
 ## Como executar!
 
 Primeiramente, verifique se o seu computador tem o compilador GCC instalado.
